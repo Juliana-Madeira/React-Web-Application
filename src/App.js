@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import Search from './components/Search';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
     <div>
       teste
     </div>
+    <Search/>
     </div>
   );
 }
