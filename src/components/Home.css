@@ -1,0 +1,21 @@
+.cusine-img{
+    max-width: 100%;
+    width: 395px;
+    height: 395px;
+    object-fit: cover;
+}
+.cusine{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cusine p{
+    text-decoration: none;
+    color: black;
+}
+.home-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
