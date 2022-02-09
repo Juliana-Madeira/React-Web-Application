@@ -1,15 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import Cusine from './components/Cusine';
+import Details from './components/Details';
+
+
 
 function App() {
+ 
   return (
     <div className="App">
-    <Header/>
-    <div>
-      teste
+  <Routes>
+  <Route
+      path ='/'
+      element = {<HomePage/>}
+      />
+   <Route
+      path ='/country/:country'
+      element = {<Cusine/>}
+      />
+
+  <Route
+      path ='/recipe/:id'
+      element = {<Details/>}
+      /> 
+  </Routes>
     </div>
-    </div>
+      
   );
 }
 
