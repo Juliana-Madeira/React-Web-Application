@@ -1,37 +1,24 @@
 import './App.css';
-import Header from './components/Header';
-import Search from './components/Search';
-import { useState } from 'react';
-import axios from 'axios';
-import { useEffect } from 'react';
-import Home from './components/Home';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import Cusine from './components/Cusine';
+
 
 
 function App() {
-  const [recipes, setRecipes] = useState([]);
-  const getRecipes = async () => { 
-    const {data} = await axios.get('https://www.themealdb.com/api/json/v1/1/list.php?a=list')
-    setRecipes(data);
-  }
-
-  useEffect(() => {
-    getRecipes();
-  }, []);
-  
-  console.log(recipes);
-
-  if (!recipes){
-    return ''}
-  
-  //let recipeTest = recipes.meals.map(recipe => console.log(recipe.strIngredient))
-
+ 
   return (
     <div className="App">
-    <Header/>
-    <Search/>
-    <Home/>
-    
-  
+  <Routes>
+  <Route
+      path ='/'
+      element = {<HomePage/>}
+      />
+   <Route
+      path ='/:country'
+      element = {<Cusine/>}
+      />
+  </Routes>
     </div>
       
   );

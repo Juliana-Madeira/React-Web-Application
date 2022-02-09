@@ -25,8 +25,25 @@ const Home = () => {
 
             </div>
         </Link>
+
+        <Link to='/tunisian' className="home-cusine">
+            <div className="cusine">
+            <p>Tunisian</p>
+                <img className="cusine-img" src="https://images.unsplash.com/photo-1614570218825-c2a3be79b0fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="tunisian"/>
+
+            </div>
+        </Link>
+
         </div>
         <div className="home-row">
+        <Link to='/egyptian' className="home-cusine">
+            <div className="cusine">
+            <p>Egyptian</p>
+                <img className="cusine-img" src="https://images.unsplash.com/photo-1510431198580-7727c9fa1e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="egyptian"/>
+
+            </div>
+        </Link>
+
         <Link to='/american' className="home-cusine">
             <div className="cusine">
             <p>American</p>
@@ -50,6 +67,14 @@ const Home = () => {
         </Link>
         </div>
         <div className="home-row">
+        <Link to='/greek' className="home-cusine">
+            <div className="cusine">
+            <p>Greek</p>
+                <img className="cusine-img" src="https://images.unsplash.com/photo-1505576633757-0ac1084af824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="greek"/>
+
+            </div>
+        </Link>
+
         <Link to='/chinese' className="home-cusine">
             <div className="cusine">
             <p>Chinese</p>
@@ -94,6 +119,15 @@ const Home = () => {
 
             </div>
         </Link>
+
+        <Link to='/polish' className="home-cusine">
+            <div className="cusine">
+            <p>Polish</p>
+                <img className="cusine-img" src="https://images.unsplash.com/photo-1577391846175-d57a76814389?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="polish"/>
+
+            </div>
+        </Link>
+   
         </div>
         
         </div>
