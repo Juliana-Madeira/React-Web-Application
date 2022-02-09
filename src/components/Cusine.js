@@ -4,13 +4,13 @@ import { Link, useParams } from "react-router-dom";
 import Header from "./Header";
 import Search from "./Search";
 const Cusine = () => {
-  const params = useParams();
-  console.log(params)
+  const countryParams = useParams();
+  console.log(countryParams)
 
   const [recipes, setRecipes] = useState([]);
   const getRecipes = async () => {
     const { data } = await axios.get(
-      `https://www.themealdb.com/api/json/v1/1/filter.php?a=${params.country}`
+      `https://www.themealdb.com/api/json/v1/1/filter.php?a=${countryParams.country}`
     );
     setRecipes(data.meals);
   };
@@ -25,7 +25,7 @@ const Cusine = () => {
     <Search/>
       {recipes.map((recipe) => {
         return (
-          <Link to={`/${params.country}/${recipe.idMeal}`} key={recipe.idMeal}>
+          <Link to={`/recipe/${recipe.idMeal}`} key={recipe.idMeal}>
             <div>
               <figure>
                 <img src={recipe.strMealThumb} className="list-img" alt="" />
