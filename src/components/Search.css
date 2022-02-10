@@ -1,0 +1,19 @@
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.input{
+    width: 350px;
+    margin-right: 8px;
+}
+
+.button{
+    background-color: rgba(43, 22, 12, 0.938);
+    color: rgb(255, 255, 255);
+    border-radius: 18%;
+    height: 28px;
+}

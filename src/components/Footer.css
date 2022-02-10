@@ -1,6 +1,8 @@
-.header{
+.footer{
+    height: 50px;
     background-color: #f8f6ea;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 15px;    
 }

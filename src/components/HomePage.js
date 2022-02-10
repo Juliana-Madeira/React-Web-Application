@@ -1,6 +1,8 @@
 import Header from './Header';
 import Search from './Search';
 import Home from './Home';
+import Footer from './Footer';
+
 
 
 const HomePage = () =>{
@@ -10,6 +12,7 @@ const HomePage = () =>{
     <Header/>
     <Search/>
     <Home/>
+    <Footer/>
     </div>
       
   );

@@ -3,6 +3,9 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Header from "./Header";
 import Search from "./Search";
+import Footer from "./Footer";
+import "./Cusine.css"
+
 const Cusine = () => {
   const countryParams = useParams();
   console.log(countryParams)
@@ -34,6 +37,7 @@ const Cusine = () => {
           </Link>
         );
       })}
+    <Footer/>  
     </div>
   );
 };
