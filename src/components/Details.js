@@ -31,10 +31,12 @@ const Details = () => {
       <Search />
       <div className="details">
       <div className="details-pic-name">
-        {recipe.strMeal}
+       <p>{recipe.strMeal}</p> 
         <img src={recipe.strMealThumb} alt={recipe.strMeal} />
       </div>
       <div className="details-ingridients-instructions">
+        <div className="details-ingridients">
+          <div className="ingredients">
         <p>{recipe.strMeasure1} {recipe.strIngredient1}</p>
         <p>{recipe.strMeasure2} {recipe.strIngredient2}</p>
         <p>{recipe.strMeasure3} {recipe.strIngredient3}</p>
@@ -45,6 +47,8 @@ const Details = () => {
         <p>{recipe.strMeasure8} {recipe.strIngredient8}</p>
         <p>{recipe.strMeasure9} {recipe.strIngredient9}</p>
         <p>{recipe.strMeasure10} {recipe.strIngredient10}</p>
+          </div>
+          <div className="ingredients">
         <p>{recipe.strMeasure11} {recipe.strIngredient11}</p>
         <p>{recipe.strMeasure12} {recipe.strIngredient12}</p>
         <p>{recipe.strMeasure13} {recipe.strIngredient13}</p>
@@ -55,6 +59,8 @@ const Details = () => {
         <p>{recipe.strMeasure18} {recipe.strIngredient18}</p>
         <p>{recipe.strMeasure19} {recipe.strIngredient19}</p>
         <p>{recipe.strMeasure20} {recipe.strIngredient20}</p>
+          </div>
+        </div>
         <p>{recipe.strInstructions}</p>
       </div>
       </div>
