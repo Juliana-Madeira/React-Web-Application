@@ -8,14 +8,14 @@ import "./Cusine.css"
 
 const Cusine = () => {
   const countryParams = useParams();
-  console.log(countryParams)
+  
 
   const [recipes, setRecipes] = useState([]);
   const getRecipes = async () => {
     const { data } = await axios.get(
       `https://www.themealdb.com/api/json/v1/1/filter.php?a=${countryParams.country}`
     );
-    console.log(data.meals)
+    
     setRecipes(data.meals);
   };
 
