@@ -1,0 +1,13 @@
+.details-pic-name img{
+    height: 550px;
+    width: auto;
+}
+.details-pic-name{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.details{
+    display: flex;
+}
