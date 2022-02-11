@@ -15,8 +15,10 @@ const Cusine = () => {
     const { data } = await axios.get(
       `https://www.themealdb.com/api/json/v1/1/filter.php?a=${countryParams.country}`
     );
+    console.log(data.meals)
     setRecipes(data.meals);
   };
+
 
   useEffect(() => {
     getRecipes();
@@ -26,17 +28,26 @@ const Cusine = () => {
     <div>
     <Header/>
     <Search/>
+    <div className="cusine-size">
+    <h1 className="cusine-h1">{countryParams.country}</h1>
+    <div  className="cusine-row">
       {recipes.map((recipe) => {
         return (
-          <Link to={`/recipe/${recipe.idMeal}`} key={recipe.idMeal}>
-            <div>
+          <div>
+          <Link className="cusine-link" to={`/recipe/${recipe.idMeal}`} key={recipe.idMeal}>
+            <div className="cusine-recipe">
               <figure>
                 <img src={recipe.strMealThumb} className="list-img" alt="" />
               </figure>
+              <h3>{recipe.strMeal}</h3>
             </div>
           </Link>
+          
+          </div>
         );
       })}
+      </div>
+      </div>
     <Footer/>  
     </div>
   );
