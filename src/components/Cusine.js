@@ -41,7 +41,9 @@ const Cusine = () => {
                         alt=""
                       />
                     </figure>
-                    <h3>{recipe.strMeal}</h3>
+                    <div className="cusine-title">
+                      <h3>{recipe.strMeal}</h3>
+                    </div>
                   </div>
                 </Link>
               </div>
