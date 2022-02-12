@@ -4,6 +4,7 @@ import HomePage from "./components/HomePage";
 import Cusine from "./components/Cusine";
 import Details from "./components/Details";
 import SearchPage from "./components/SearchPage";
+import Category from "./components/Category";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/country/:country" element={<Cusine />} />
         <Route path="/recipe/:id" element={<Details />} />
         <Route path="/search/:food" element={<SearchPage />} />
+        <Route path="/categories/:category" element={<Category/>}/>
       </Routes>
     </div>
   );
