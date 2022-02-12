@@ -1,6 +1,13 @@
 .header{
     background-color: #f8f6ea;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+}
+.category-row{
+    display: flex;
+    align-items: center;
+}
+.category{
+    margin:10px;
 }

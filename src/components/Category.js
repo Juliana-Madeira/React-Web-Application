@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import './Cusine.css'
 
 
 
@@ -22,7 +23,7 @@ const Category = () => {
   
     useEffect(() => {
       getRecipes();
-    }, []);
+    }, [categoryParams]);
 
  return(
      <div>
@@ -43,7 +44,9 @@ const Category = () => {
                         alt=""
                       />
                     </figure>
-                    <h3>{recipe.strMeal}</h3>
+                    <div className="cusine-title">
+                      <h3>{recipe.strMeal}</h3>
+                    </div>
                   </div>
                 </Link>
               </div>
