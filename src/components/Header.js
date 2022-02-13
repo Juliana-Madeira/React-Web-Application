@@ -26,8 +26,8 @@ return(
     <Link className='category' to='/categories/about'>
     <h4>About</h4>
     </Link>
-    <Link className='category' to='/categories/ingridients'>
-    <h4>Ingridients</h4>
+    <Link className='category' to='/categories/ingredients'>
+    <h4>Ingredients</h4>
     </Link>
     <Link className='category' to='/categories/Favorits'>
     <h4>Favorits</h4>

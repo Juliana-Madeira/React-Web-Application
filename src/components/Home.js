@@ -47,21 +47,21 @@ const Home = () => {
         <Link to='/country/American' className="home-cusine">
             <div className="cusine">
             <p>American</p>
-                <img className="cusine-img" src="https://cdn.pixabay.com/photo/2016/03/26/23/19/hamburger-1281855_960_720.jpg" alt="american"/>
+                <img className="cusine-img" src="https://images.unsplash.com/photo-1603046891744-1f76eb10aec7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="american"/>
 
             </div>
         </Link>
         <Link to='/country/British' className="home-cusine">
             <div className="cusine">
             <p>British</p>
-                <img className="cusine-img" src="https://images.unsplash.com/photo-1635897411141-7bd2b9c6ab16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="british"/>
+                <img className="cusine-img" src="https://images.unsplash.com/photo-1587248720327-8eb72564be1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="british"/>
 
             </div>
         </Link>
         <Link to='/country/Canadian' className="home-cusine">
             <div className="cusine">
             <p>Canadian</p>
-                <img className="cusine-img" src="https://cdn.pixabay.com/photo/2019/04/10/00/59/french-fries-4115953_960_720.jpg" alt="canadian"/>
+                <img className="cusine-img" src="https://images.unsplash.com/photo-1541095441899-5d96a6da10b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="canadian"/>
 
             </div>
         </Link>
@@ -78,7 +78,7 @@ const Home = () => {
         <Link to='/country/Chinese' className="home-cusine">
             <div className="cusine">
             <p>Chinese</p>
-                <img className="cusine-img" src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="chinese"/>
+                <img className="cusine-img" src="https://images.unsplash.com/photo-1552611052-33e04de081de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="chinese"/>
 
             </div>
         </Link>
@@ -101,14 +101,14 @@ const Home = () => {
         <Link to='/country/Japonese' className="home-cusine">
             <div className="cusine">
             <p>Japonese</p>
-                <img className="cusine-img" src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" alt="japonese"/>
+                <img className="cusine-img" src="https://images.unsplash.com/photo-1622149956201-192185566cd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=665&q=80" alt="japonese"/>
 
             </div>
         </Link>
         <Link to='/country/Mexican' className="home-cusine">
             <div className="cusine">
             <p>Mexican</p>
-                <img className="cusine-img" src="https://cdn.pixabay.com/photo/2020/04/21/14/44/mexican-food-5073328_960_720.jpg" alt="mexican"/>
+                <img className="cusine-img" src="https://images.unsplash.com/photo-1588556008426-af415581d44b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80" alt="mexican"/>
 
             </div>
         </Link>

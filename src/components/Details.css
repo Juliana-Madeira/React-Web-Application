@@ -1,14 +1,17 @@
 .details-pic-name img{
     height: 400px;
-    width: auto;
+    width: 400px;
     display: flex;
     margin-bottom: 30px;
+    max-width: 100%;
+    border-radius: 20px;
 }
 
 .details-pic-name p{
     color: rgba(43, 22, 12, 0.938);
     font-size: 40px;
     text-align: center;
+    
 }
 
 .details-pic-name{
