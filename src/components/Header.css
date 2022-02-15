@@ -9,5 +9,9 @@
     align-items: center;
 }
 .category{
-    margin:10px;
+    margin:15px;
+    text-decoration: none;
+    color: rgba(43, 22, 12, 0.938)
 }
+
+
