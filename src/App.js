@@ -5,6 +5,8 @@ import Cusine from "./components/Cusine";
 import Details from "./components/Details";
 import SearchPage from "./components/SearchPage";
 import Category from "./components/Category";
+import IngredientsPage from "./components/IngredientsPage";
+import IngredientsElement from "./components/IngredientsElement";
 
 function App() {
  
@@ -16,6 +18,8 @@ function App() {
         <Route path="/recipe/:id" element={<Details />} />
         <Route path="/search/:food" element={<SearchPage />} />
         <Route path="/categories/:category" element={<Category/>}/>
+        <Route path="/categories/ingredients" element={<IngredientsPage/>}/>
+        <Route path="/ingredients/:ingredient" element={<IngredientsElement/>}/>
       </Routes>
     </div>
   );
