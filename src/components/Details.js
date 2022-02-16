@@ -27,21 +27,30 @@ const Details = () => {
     checkFavorite();
   }, []);
 
-  const favorites = []
+
+  
   const addFavorite = () =>{
-    localStorage.setItem('favorites', JSON.stringify([id]));
+    
+    let keep = JSON.parse(localStorage.getItem('favorites'));
+    if (keep != null){
+      if(!keep.includes(id)){
+        keep.push(id);
+      } 
+    } else {
+      keep = [id];
+    }
+    localStorage.setItem('favorites', JSON.stringify(keep));
+    
     checkFavorite();
-   
+
+    
   }
 
   const checkFavorite = () => {
     const keep = JSON.parse(localStorage.getItem('favorites'));
     console.log(keep)
-    if(!favorites.includes(id)){
-      favorites.push(id);
-    }
-    console.log(favorites);
-    setFavorite(keep === id);
+    
+    setFavorite(keep.includes(id));
   }
 
 
