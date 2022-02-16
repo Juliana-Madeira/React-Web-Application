@@ -11,6 +11,7 @@ const Details = () => {
 
 
   const [recipe, setRecipe] = useState([]);
+  const [favorite, setFavorite] = useState(false);
   const getRecipe = async () => {
     console.log(id);
     const { data } = await axios.get(
@@ -23,12 +24,35 @@ const Details = () => {
 
   useEffect(() => {
     getRecipe();
+    checkFavorite();
   }, []);
+
+  const favorites = []
+  const addFavorite = () =>{
+    localStorage.setItem('favorites', JSON.stringify([id]));
+    checkFavorite();
+   
+  }
+
+  const checkFavorite = () => {
+    const keep = JSON.parse(localStorage.getItem('favorites'));
+    console.log(keep)
+    if(!favorites.includes(id)){
+      favorites.push(id);
+    }
+    console.log(favorites);
+    setFavorite(keep === id);
+  }
+
 
   return (
     <div>
       <Header />
       <Search />
+      <div>
+        <button onClick={addFavorite}>favoritar</button>
+        {favorite ? <p>adicionado</p> : <p>não adicionado</p>}
+      </div>
       <div className="details">
         <div className="details-pic-name">
           <p>{recipe.strMeal}</p> 
@@ -70,6 +94,7 @@ const Details = () => {
         </div>
       </div>
       </div>
+    
       <Footer/> 
       
     </div>
