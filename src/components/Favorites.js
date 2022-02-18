@@ -1,19 +1,60 @@
-import React from 'react';
-
+import React, { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
+import axios from "axios";
+import Header from "./Header";
+import './Cusine.css'
+import Footer from "./Footer";
 
 const Favorites = () => {
+  const keep = JSON.parse(localStorage.getItem("favorites"));
+  console.log(keep);
 
-    const number = [1,2,3,4]
-    localStorage.setItem('favorites', JSON.stringify(number))
-  
-    const item = localStorage.getItem('favorites')
-    console.log(JSON.parse(item))
-  
+  const [favorites, setFavorites] = useState([]);
 
 
-    return (
-        <div>
+  const getRecipe = async (favMeals) => {
+    const mealFav = [];
 
-        </div>
-    )
-}
+    for (const fav of favMeals) {
+      const { data } = await axios.get(
+        `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${fav}`
+      );
+      mealFav.push(data.meals[0]);
+    }
+    setFavorites(mealFav);
+  };
+
+  useEffect(() => {
+    getRecipe(keep);
+  }, []);
+
+  return (
+    <div>
+      <Header />
+      <div className="cusine-row">
+      {favorites.length
+        ? favorites.map((favorite) => 
+        <div key={favorite.idMeal}>
+        <Link className="cusine-link" to={`/recipe/${favorite.idMeal}`}>
+          <div className="cusine-recipe">
+            <figure>
+              <img
+                src={favorite.strMealThumb}
+                className="list-img"
+                alt=""
+              />
+            </figure>
+            <div className="cusine-title">
+              <h3>{favorite.strMeal}</h3>
+            </div>
+          </div>
+        </Link>
+      </div>
+        ) : ""}
+       </div>
+       <Footer/>
+    </div>
+    
+  );
+};
+export default Favorites;
