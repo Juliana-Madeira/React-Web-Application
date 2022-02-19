@@ -5,8 +5,8 @@ const About = () => {
         <div>
             <Header/>
             <Search/>
-            {/*<span>This is the Conclusion Project of the Second Module of Bootcamp, 
-            made at Ironhack in São Paulo/Brazil.</span>
+            {/*<p><span>This is the Conclusion Project of the Second Module of Bootcamp, 
+            made at Ironhack in São Paulo/Brazil.</span></p>
             <p><span>We use Javascript, React JS, CSS3 and HTML5, in all the work.</span></p>
             <p><span>With requests made to the API “The Meal DB”, we were able to use recipes, 
             images and many other data.<span></p>
