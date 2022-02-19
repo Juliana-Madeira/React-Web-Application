@@ -5,6 +5,7 @@ import Header from "./Header";
 import Search from "./Search";
 import Footer from "./Footer";
 import "./Cusine.css";
+import ButtonFavorites from "./ButtonFavorites";
 
 const Cusine = () => {
   const countryParams = useParams();
@@ -31,7 +32,7 @@ const Cusine = () => {
         <div className="cusine-row">
           {recipes.map((recipe) => {
             return (
-              <div key={recipe.idMeal}>
+              <div className="button-favorites" key={recipe.idMeal}>
                 <Link className="cusine-link" to={`/recipe/${recipe.idMeal}`}>
                   <div className="cusine-recipe">
                     <figure>
@@ -46,6 +47,7 @@ const Cusine = () => {
                     </div>
                   </div>
                 </Link>
+                <ButtonFavorites id= {recipe.idMeal}/>
               </div>
             );
           })}

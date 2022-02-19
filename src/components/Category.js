@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import './Cusine.css'
+import ButtonFavorites from "./ButtonFavorites";
 
 
 
@@ -34,7 +35,7 @@ const Category = () => {
         <div className="cusine-row">
           {recipes.map((recipe) => {
             return (
-              <div key={recipe.idMeal}>
+              <div className="button-favorites" key={recipe.idMeal}>
                 <Link className="cusine-link" to={`/recipe/${recipe.idMeal}`}>
                   <div className="cusine-recipe">
                     <figure>
@@ -49,6 +50,7 @@ const Category = () => {
                     </div>
                   </div>
                 </Link>
+                <ButtonFavorites id= {recipe.idMeal}/>
               </div>
             );
           })}
