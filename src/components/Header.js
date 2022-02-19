@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Spork from '../images/The-Spork-Logo.png';
 import './Header.css'
 
@@ -9,29 +9,29 @@ const Header = () =>{
 return(
     <div className="header">
         <div className="category-row">
-    <Link className='category' to='/categories/Vegetarian'>
+    <NavLink className='category' to='/categories/Vegetarian'>
     <h4>Vegetarian</h4>
-    </Link>
-    <Link className='category' to='/categories/Vegan'>
+    </NavLink>
+    <NavLink  className='category' to='/categories/Vegan'>
     <h4>Vegan</h4>
-    </Link>
-    <Link className='category' to='/categories/Dessert'>
+    </NavLink >
+    <NavLink  className='category' to='/categories/Dessert'>
     <h4>Dessert</h4>
-    </Link>
+    </NavLink >
     </div>
-    <Link className='logo' to='/'>
+    <NavLink  className='logo' to='/'>
     <img src={Spork} alt="the-spork-logo"/>
-    </Link>
+    </NavLink >
     <div className="category-row">
-    <Link className='category' to='/categories/about'>
+    <NavLink  className='category' to='/categories/about'>
     <h4>About</h4>
-    </Link>
-    <Link className='category' to='/categories/ingredients'>
+    </NavLink >
+    <NavLink  className='category' to='/categories/ingredients'>
     <h4>Ingredients</h4>
-    </Link>
-    <Link className='category' to='/categories/favorites'>
+    </NavLink >
+    <NavLink  className='category' to='/categories/favorites'>
     <h4>My Favorites</h4>
-    </Link>
+    </NavLink >
     </div>
     
    

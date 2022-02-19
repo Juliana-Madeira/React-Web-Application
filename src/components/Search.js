@@ -9,7 +9,7 @@ const Search = () => {
     <form className="search">
       <input
         type="text"
-        placeholder="Search by Name of Food"
+        placeholder="Search by the name of the food"
         value={value}
         onChange={(event) => setValue(event.target.value)}
         className="input"
@@ -17,7 +17,7 @@ const Search = () => {
       <Link to={`/search/${value}`}>
         <button 
         type="button" 
-        className="button">
+        className="fill">
           Search
         </button>
       </Link>
