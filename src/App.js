@@ -8,6 +8,7 @@ import Category from "./components/Category";
 import IngredientsPage from "./components/IngredientsPage";
 import IngredientsElement from "./components/IngredientsElement";
 import Favorites from "./components/Favorites";
+import About from "./components/About";
 
 function App() {
  
@@ -21,7 +22,8 @@ function App() {
         <Route path="/categories/:category" element={<Category/>}/>
         <Route path="/categories/ingredients" element={<IngredientsPage/>}/>
         <Route path="/ingredients/:ingredient" element={<IngredientsElement/>}/>
-        <Route path="categories/favorites" element={<Favorites/>}/>
+        <Route path="/categories/favorites" element={<Favorites/>}/>
+        <Route path="/categories/about" element={<About/>}/>
       </Routes>
     </div>
   );
