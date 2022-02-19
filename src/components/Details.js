@@ -5,13 +5,15 @@ import './Details.css';
 import Header from "./Header";
 import Search from "./Search";
 import Footer from "./Footer";
+import ButtonFavorites from "./ButtonFavorites";
+
 const Details = () => {
 
   const { id } = useParams();
 
 
   const [recipe, setRecipe] = useState([]);
-  const [favorite, setFavorite] = useState(false);
+
   const getRecipe = async () => {
     console.log(id);
     const { data } = await axios.get(
@@ -24,49 +26,28 @@ const Details = () => {
 
   useEffect(() => {
     getRecipe();
-    checkFavorite();
   }, []);
 
 
-  
-  const addFavorite = () =>{
-    
-    let keep = JSON.parse(localStorage.getItem('favorites'));
-    if (keep != null){
-      if(!keep.includes(id)){
-        keep.push(id);
-      } 
-    } else {
-      keep = [id];
-    }
-    localStorage.setItem('favorites', JSON.stringify(keep));
-    
-    checkFavorite();
-
-    
-  }
-
-  const checkFavorite = () => {
-    const keep = JSON.parse(localStorage.getItem('favorites'));
-    console.log(keep)
-    
-    setFavorite(keep.includes(id));
-  }
 
 
   return (
     <div>
       <Header />
       <Search />
-      <div>
-        <button onClick={addFavorite}>favoritar</button>
-        {favorite ? <p>adicionado</p> : <p>não adicionado</p>}
-      </div>
+
       <div className="details">
         <div className="details-pic-name">
           <p>{recipe.strMeal}</p> 
+          <div className="heart">
           <img src={recipe.strMealThumb} alt={recipe.strMeal} />
+          
+          <ButtonFavorites id={id}/>  
+          
+          </div>
+          
         </div>
+     
         <hr style={{width: "800px"}}/>
         <div >
           <p className="title-ingredients">Ingredients</p>

@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import Header from "./Header";
 import Search from "./Search";
 import Footer from "./Footer";
+import ButtonFavorites from "./ButtonFavorites";
 
 
 const IngredientsElement = () => {
@@ -31,7 +32,7 @@ const IngredientsElement = () => {
         <div className="cusine-row">
           {recipes.map((recipe) => {
             return (
-              <div key={recipe.idMeal}>
+              <div className="button-favorites" key={recipe.idMeal}>
                 <Link className="cusine-link" to={`/recipe/${recipe.idMeal}`}>
                   <div className="cusine-recipe">
                     <figure>
@@ -46,6 +47,7 @@ const IngredientsElement = () => {
                     </div>
                   </div>
                 </Link>
+                <ButtonFavorites id= {recipe.idMeal}/>
               </div>
             );
           })}

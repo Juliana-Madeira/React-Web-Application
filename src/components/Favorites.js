@@ -4,6 +4,7 @@ import axios from "axios";
 import Header from "./Header";
 import './Cusine.css'
 import Footer from "./Footer";
+import ButtonFavorites from "./ButtonFavorites";
 
 const Favorites = () => {
   const keep = JSON.parse(localStorage.getItem("favorites"));
@@ -34,7 +35,7 @@ const Favorites = () => {
       <div className="cusine-row">
       {favorites.length
         ? favorites.map((favorite) => 
-        <div key={favorite.idMeal}>
+        <div className="button-favorites" key={favorite.idMeal}>
         <Link className="cusine-link" to={`/recipe/${favorite.idMeal}`}>
           <div className="cusine-recipe">
             <figure>
@@ -46,9 +47,10 @@ const Favorites = () => {
             </figure>
             <div className="cusine-title">
               <h3>{favorite.strMeal}</h3>
-            </div>
+            </div> 
           </div>
         </Link>
+        <ButtonFavorites id= {favorite.idMeal}/>
       </div>
         ) : ""}
        </div>
