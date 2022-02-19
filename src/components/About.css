@@ -1,0 +1,19 @@
+.about{
+    text-align: center;
+    font-size: 18px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: rgba(43, 22, 12, 0.938);
+}
+
+.link-api{
+    text-decoration: underline;
+    color: rgba(43, 22, 12, 0.938);
+    font-weight: bold;
+}
+
+.creators-link{
+    text-decoration: underline;
+    color: rgba(43, 22, 12, 0.938)k;
+}
