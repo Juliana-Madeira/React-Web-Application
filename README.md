@@ -5,7 +5,7 @@
 
 ## Features
 
-![Start Screen](.src/images/start-screen.png)
+![Start Screen](../images/start-screen.png)
 
 This is the Conclusion Project of the Second Module of Bootcamp, made at Ironhack in São Paulo/Brazil.
 We use Javascript, React JS, CSS3 and HTML5, in all the work.
