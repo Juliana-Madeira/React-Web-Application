@@ -15,7 +15,8 @@ It was a great learning experience, as well as great fun with the recipes we got
 
 Project developed by Juliana Madeira and Jessica Nonato.
 
-See creators GitHub:
+
+## See Creators GitHub
 
  [Juliana Madeira](https://github.com/Juliana-Madeira).
  
