@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
-import Header from "./Header";
 import './Cusine.css'
 import Footer from "./Footer";
 import ButtonFavorites from "./ButtonFavorites";
+import Navbar from './Navbar';
 
 const Favorites = () => {
   const keep = JSON.parse(localStorage.getItem("favorites"));
@@ -31,7 +31,7 @@ const Favorites = () => {
 
   return (
     <div>
-      <Header />
+      <Navbar/>
       <div className="cusine-row">
       {favorites.length
         ? favorites.map((favorite) => 

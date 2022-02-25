@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from './Header';
 import Footer from './Footer';
 import './About.css';
 import { GoMarkGithub } from 'react-icons/go'; 
+import Navbar from './Navbar';
 
 
 const About = () => {
     return (
         <div>
-            <Header/>
+            <Navbar/>
             <div className='about'>
             <p><span>This is the Conclusion Project of the Second Module of Bootcamp, 
             made at Ironhack in São Paulo/Brazil.</span></p>

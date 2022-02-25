@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import Header from "./Header";
+import Navbar from "./Navbar"
 import Search from "./Search";
 import Footer from "./Footer";
 import ButtonFavorites from "./ButtonFavorites";
@@ -25,7 +25,7 @@ const IngredientsElement = () => {
 
   return (
     <div>
-      <Header />
+      <Navbar />
       <Search />
       <div className="cusine-size">
         <h1 className="cusine-h1">{ingredient}</h1>

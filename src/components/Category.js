@@ -1,10 +1,10 @@
 import axios from "axios";
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Header from "./Header";
 import Footer from "./Footer";
 import './Cusine.css'
 import ButtonFavorites from "./ButtonFavorites";
+import Navbar from './Navbar';
 
 
 
@@ -28,7 +28,7 @@ const Category = () => {
 
  return(
      <div>
-         <Header />
+         <Navbar/>
     
         <div className="cusine-size">
         <h1 className="cusine-h1">{categoryParams.category}</h1>

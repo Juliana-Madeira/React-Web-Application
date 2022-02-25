@@ -2,10 +2,10 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import './Details.css';
-import Header from "./Header";
 import Search from "./Search";
 import Footer from "./Footer";
 import ButtonFavorites from "./ButtonFavorites";
+import Navbar from './Navbar';
 
 const Details = () => {
 
@@ -33,7 +33,7 @@ const Details = () => {
 
   return (
     <div>
-      <Header />
+      <Navbar/>
       <Search />
 
       <div className="details">
@@ -48,10 +48,11 @@ const Details = () => {
           
         </div>
      
-        <hr style={{width: "800px"}}/>
-        <div >
-          <p className="title-ingredients">Ingredients</p>
+       
           <div className="details-ingridients">
+          <hr className="divider"/>
+        
+        <p className="title-ingredients">Ingredients</p>
             <div className="ingredients">
               <p>{recipe.strMeasure1} {recipe.strIngredient1}</p>
               <p>{recipe.strMeasure2} {recipe.strIngredient2}</p>
@@ -62,9 +63,7 @@ const Details = () => {
               <p>{recipe.strMeasure7} {recipe.strIngredient7}</p>
               <p>{recipe.strMeasure8} {recipe.strIngredient8}</p>
               <p>{recipe.strMeasure9} {recipe.strIngredient9}</p>
-              <p>{recipe.strMeasure10} {recipe.strIngredient10}</p>
-            </div>
-            <div className="ingredients">    
+              <p>{recipe.strMeasure10} {recipe.strIngredient10}</p> 
               <p>{recipe.strMeasure11} {recipe.strIngredient11}</p>
               <p>{recipe.strMeasure12} {recipe.strIngredient12}</p>
               <p>{recipe.strMeasure13} {recipe.strIngredient13}</p>
@@ -76,8 +75,8 @@ const Details = () => {
               <p>{recipe.strMeasure19} {recipe.strIngredient19}</p>
               <p>{recipe.strMeasure20} {recipe.strIngredient20}</p>
             </div>
-          </div>
-        <hr style={{width: "800px"}}/>
+         
+        <hr className="divider"/>
         <p className="title-ingredients">Instructions</p>
         <div className="details-ingridients-instructions">
           <p>{recipe.strInstructions}</p>

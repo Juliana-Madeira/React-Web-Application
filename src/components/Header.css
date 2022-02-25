@@ -1,8 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
 .header{
     background-color: #f8f6ea;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    height: 45vh;
 }
 .category-row{
     display: flex;

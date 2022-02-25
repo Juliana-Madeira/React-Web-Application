@@ -2,8 +2,8 @@ import Search from "./Search";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import Header from "./Header";
 import Footer from "./Footer";
+import Navbar from './Navbar';
 
 const SearchPage = () => {
   
@@ -25,7 +25,7 @@ const SearchPage = () => {
 
   return (
     <div>
-      <Header />
+      <Navbar/>
       <div>
         <Search />
       </div>

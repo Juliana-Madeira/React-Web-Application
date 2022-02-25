@@ -13,6 +13,7 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
+    justify-content: space-around;
 }
 
 .cusine-recipe{
@@ -60,9 +61,30 @@
 }
 .button-favorites{
     position: relative;
+    margin: 30px;
 }
 .go2484888251, .go4268192979{
     position: absolute;
-    top: 18px;
-    right: 18px;
+    top: 15px;
+    right: 1px;
 }
+
+@media screen and (max-width: 1000px) {
+  
+    .home-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        justify-content: space-around;
+    }
+    .cusine-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        justify-content: space-around;
+    }
+  }
