@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer">
       
-      &copy;<i>Developed by Jessica Nonato and Juliana Madeira</i>
+      &copy;<i>Developed by <span>Jessica Nonato</span> and <span>Juliana Madeira</span></i>
     </div>
   );
 };

@@ -17,3 +17,15 @@
     text-decoration: underline;
     color: rgba(43, 22, 12, 0.938);
 }
+
+@media screen and (max-width: 510px) {
+
+    .about{
+        text-align: center;
+        font-size: 18px;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 50px;
+        color: rgba(43, 22, 12, 0.938);
+    }
+}

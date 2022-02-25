@@ -2,6 +2,7 @@ import Header from './Header';
 import Search from './Search';
 import Home from './Home';
 import Footer from './Footer';
+import Navbar from './Navbar';
 
 
 
@@ -9,7 +10,7 @@ const HomePage = () =>{
  
   return (
     <div className="App">
-    <Header/>
+    <Navbar/>
     <Search/>
     <Home/>
     <Footer/>

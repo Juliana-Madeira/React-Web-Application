@@ -1,12 +1,12 @@
 import Ingredients from "./Ingredients";
-import Header from './Header';
 import Search from './Search';
 import Footer from './Footer';
+import Navbar from './Navbar';
 
 const IngredientsPage = () => {
     return (
         <div className="ingredients-page">
-        <Header/>
+        <Navbar/>
         <Search/>
         <Ingredients/>
         <Footer/>

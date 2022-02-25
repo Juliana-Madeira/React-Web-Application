@@ -6,3 +6,8 @@
     justify-content: center;
     margin-top: 15px;    
 }
+@media screen and (max-width: 510px) {
+    .footer{
+        font-size: 13px;
+    }
+}
