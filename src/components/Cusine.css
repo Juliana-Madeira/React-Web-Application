@@ -65,7 +65,7 @@
 .go2484888251, .go4268192979{
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 10px;
 }
 .category-page{
     display: flex;
@@ -99,7 +99,7 @@
     .go2484888251, .go4268192979{
         position: absolute;
         top: 15px;
-        right: 25px;
+        right: 40px;
     }
 
   }
