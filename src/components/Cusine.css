@@ -60,12 +60,12 @@
 }
 .button-favorites{
     position: relative;
-    margin: 30px;
+    margin: 20px;
 }
 .go2484888251, .go4268192979{
     position: absolute;
     top: 15px;
-    right: 20px;
+    right: 15px;
 }
 .category-page{
     display: flex;
