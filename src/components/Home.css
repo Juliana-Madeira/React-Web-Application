@@ -26,9 +26,16 @@
 
 .home-cusine{
     text-decoration: none;
+    padding: 20px;
 }
 
 .cusine-img:hover {
     opacity: 0.3;
     transition: 0.3s;
+}
+.home{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+
 }

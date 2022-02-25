@@ -1,16 +1,16 @@
 import React from 'react';
-import Footer from './Footer';
 import './About.css';
 import { GoMarkGithub } from 'react-icons/go'; 
-import Navbar from './Navbar';
+
 
 
 const About = () => {
     return (
-        <div>
-            <Navbar/>
-            <div className='about'>
-            <p><span>This is the Conclusion Project of the Second Module of Bootcamp, 
+    
+                       
+            <div className='about-cont'>
+                <div className='teste'>
+                <p><span>This is the Conclusion Project of the Second Module of Bootcamp, 
             made at Ironhack in São Paulo/Brazil.</span></p>
             <p><span>We use Javascript, React JS, CSS3 and HTML5, in all the work.</span></p>
             <p><span>With requests made to the API <a href='https://www.themealdb.com/' className='link-api'>“The Meal DB”</a>, 
@@ -20,9 +20,13 @@ const About = () => {
             <p><span>See creators GitHub:</span></p>
             <p><span><GoMarkGithub/> <a href='https://github.com/Juliana-Madeira' className='creators-link'>Juliana Madeira</a></span></p>
             <p><span><GoMarkGithub/> <a href='https://github.com/JessicaNonato' className='creators-link'>Jessica Nonato</a></span></p>
+                </div>
+          
+               
             </div>
-            <Footer/>
-        </div>
+            
+       
+        
     )
 }
 export default About;

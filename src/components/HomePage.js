@@ -9,12 +9,18 @@ import Navbar from './Navbar';
 const HomePage = () =>{
  
   return (
-    <div className="App">
-    <Navbar/>
-    <Search/>
+    <div>
+       <Navbar/>
+       <Search/>
+      <div className="App">
+   
+   
     <Home/>
+    
+    </div>
     <Footer/>
     </div>
+    
       
   );
 }

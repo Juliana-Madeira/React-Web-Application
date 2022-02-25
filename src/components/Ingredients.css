@@ -26,11 +26,23 @@
 
 .ingredients-link{
     text-decoration: none;
+    padding: 20px;
 }
 
 .cusine-img:hover {
     opacity: 0.3;
     transition: 0.3s;
+}
+.ingredientes-size{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+.ingredients-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 @media screen and (max-width: 1000px) {
   

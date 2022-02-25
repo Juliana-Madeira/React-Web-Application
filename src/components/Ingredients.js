@@ -3,7 +3,7 @@ import "./Ingredients.css"
 
 const Ingredients =() => {
     return(
-        <div>
+        <div className="ingredientes-size">
         <div className="ingredients-row">
         <Link to='/ingredients/Chicken' className="ingredients-link">
             <div className="ingredients">

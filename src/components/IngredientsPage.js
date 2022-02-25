@@ -2,15 +2,22 @@ import Ingredients from "./Ingredients";
 import Search from './Search';
 import Footer from './Footer';
 import Navbar from './Navbar';
+import "./Ingredients.css"
 
 const IngredientsPage = () => {
     return (
-        <div className="ingredients-page">
+      <div>
         <Navbar/>
         <Search/>
+         <div className="ingredients-page">
+        
+       
         <Ingredients/>
-        <Footer/>
+        
         </div>
+        <Footer/>
+      </div>
+       
           
       );
 }

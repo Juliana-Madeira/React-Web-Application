@@ -27,8 +27,10 @@ const Category = () => {
     }, [categoryParams]);
 
  return(
-     <div>
-         <Navbar/>
+   <div>
+       <Navbar/>
+     <div className="category-page">
+       
     
         <div className="cusine-size">
         <h1 className="cusine-h1">{categoryParams.category}</h1>
@@ -57,8 +59,11 @@ const Category = () => {
         </div>
       </div>
       
-      <Footer />
+     
      </div>
+     <Footer />
+   </div>
+     
  )
 }
 export default Category;
