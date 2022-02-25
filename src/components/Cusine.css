@@ -96,4 +96,10 @@
         width: 100vw;
         justify-content: space-around;
     }
+    .go2484888251, .go4268192979{
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+
   }
