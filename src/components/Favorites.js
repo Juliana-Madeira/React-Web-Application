@@ -32,6 +32,8 @@ const Favorites = () => {
   return (
     <div>
       <Navbar/>
+      <div className="favorites-page">
+      
       <div className="cusine-row">
       {favorites.length
         ? favorites.map((favorite) => 
@@ -54,7 +56,9 @@ const Favorites = () => {
       </div>
         ) : ""}
        </div>
-       <Footer/>
+     
+    </div>
+    <Footer/>
     </div>
     
   );

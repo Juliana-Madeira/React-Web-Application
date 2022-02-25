@@ -35,3 +35,10 @@
     background-color: rgba(43, 22, 12, 0.938);
     color: white;
   }
+
+  @media screen and (max-width: 768px) {
+    .input{
+      width: 220px;
+    }
+    
+  }

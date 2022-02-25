@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import './Home.css'
 const Home = () => {
     return(
-        <div>
+        <div className="home">
         <div className="home-row">
         <Link to='/country/Spanish' className="home-cusine">
             <div className="cusine">

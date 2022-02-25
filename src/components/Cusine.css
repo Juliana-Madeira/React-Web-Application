@@ -12,8 +12,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100vw;
-    justify-content: space-around;
+    max-width: 1400px;
 }
 
 .cusine-recipe{
@@ -52,7 +51,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-    
+   
 }
 
 .cusine-recipe:hover .list-img{
@@ -61,12 +60,22 @@
 }
 .button-favorites{
     position: relative;
-    margin: 30px;
+    margin: 20px;
 }
 .go2484888251, .go4268192979{
     position: absolute;
     top: 15px;
-    right: 20px;
+    right: 15px;
+}
+.category-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.favorites-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (max-width: 1000px) {

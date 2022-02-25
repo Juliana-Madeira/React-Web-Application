@@ -1,10 +1,20 @@
-.about{
-    text-align: center;
-    font-size: 18px;
+.about-cont{
+    
+    
+   
+    height: 462px;
+   
+}
+.teste{
     width: 500px;
     margin: 0 auto;
     margin-top: 50px;
     color: rgba(43, 22, 12, 0.938);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 18px;
 }
 
 .link-api{
@@ -20,11 +30,10 @@
 
 @media screen and (max-width: 510px) {
 
-    .about{
+    .teste{
         text-align: center;
-        font-size: 18px;
-        width: 300px;
-        margin: 0 auto;
+        font-size: 13px;
+        width: 400px;
         margin-top: 50px;
         color: rgba(43, 22, 12, 0.938);
     }
