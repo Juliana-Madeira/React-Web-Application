@@ -74,6 +74,7 @@ position: absolute;
 top: 40px;
 right: 40px;
 background-color: #f8f6ea;
+border-radius: 20px;
 @media screen and (min-width: 769px) {
     display: none;
       
