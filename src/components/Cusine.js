@@ -32,7 +32,8 @@ const Cusine = () => {
         <div className="cusine-row">
           {recipes.map((recipe) => {
             return (
-              <div className="button-favorites" key={recipe.idMeal}>
+              <div className="wrap-element" key={recipe.idMeal}>
+              <div className="button-favorites" >
                 <Link className="cusine-link" to={`/recipe/${recipe.idMeal}`}>
                   <div className="cusine-recipe">
                     <figure>
@@ -48,6 +49,7 @@ const Cusine = () => {
                   </div>
                 </Link>
                 <ButtonFavorites id= {recipe.idMeal}/>
+              </div>
               </div>
             );
           })}
