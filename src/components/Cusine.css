@@ -18,13 +18,14 @@
 .cusine-recipe{
     display: flex;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
 }
 .cusine-recipe h3{
     text-decoration: none;
     color: rgba(43, 22, 12, 0.938); 
     font-size: 20px;
     margin-top: -5px;
+  
 }
 
 .cusine-h1{
@@ -60,12 +61,18 @@
 }
 .button-favorites{
     position: relative;
-    margin: 20px;
+    width: 350px;
+   
+}
+.wrap-element{
+    margin:20px;
+    display: flex;
+    justify-content: center;
 }
 .go2484888251, .go4268192979{
     position: absolute;
-    top: 15px;
-    right: 1px;
+    top: 25px;
+    right: 25px;
 }
 .category-page{
     display: flex;
@@ -96,10 +103,7 @@
         width: 100vw;
         justify-content: space-around;
     }
-    .go2484888251, .go4268192979{
-        position: absolute;
-        top: 15px;
-        right: 40px;
-    }
+
 
   }
+  

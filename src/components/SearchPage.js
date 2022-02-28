@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from './Navbar';
+import './Cusine.css'
 
 const SearchPage = () => {
   
@@ -29,11 +30,13 @@ const SearchPage = () => {
       <div>
         <Search />
       </div>
+      <div className="cusine-size">
       <div className="cusine-row">
         {recipes
           ? recipes.map((recipe) => {
               return (
-                <div key={recipe.idMeal}>
+                <div className="wrap-element" key={recipe.idMeal}>
+                  <div className="button-favorites" >
                   <Link className="cusine-link" to={`/recipe/${recipe.idMeal}`}>
                     <div className="cusine-recipe">
                       <figure>
@@ -46,11 +49,14 @@ const SearchPage = () => {
                       <h3>{recipe.strMeal}</h3>
                     </div>
                   </Link>
+                  </div>
                 </div>
               );
             })
           : "No Results."}
       </div>
+      </div>
+     
       <Footer />
     </div>
   );
